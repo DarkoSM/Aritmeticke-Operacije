@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            let numberA = prompt("Please enter number A:");
+            let operater = prompt("Please select arithmetic operation:");
+            let numberB = prompt("Please enter number B:");
+            
+            let result = operation(numberA, numberB, operater);
+
+            function operation(a, b, c) {
+                if (c == "+") {
+            return parseInt(a) + parseInt(b);}
+                else if (c == "-") {
+            return parseInt(a) - parseInt(b);}
+                else if(c == "*") {
+            return parseInt(a) * parseInt(b);}
+                else if (c == "/") {
+            return parseInt(a) / parseInt(b);}
+                else {alert("Wrong operation. Try again.");};
+}
+            
+            alert("Result is: " + result);
+
+    </script>
+</body>
+</html>
